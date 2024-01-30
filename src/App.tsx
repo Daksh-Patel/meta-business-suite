@@ -1,10 +1,13 @@
-import { Box, Button } from "@mui/material"
+import { Stack } from "@mui/material"
+
+import SideBar from "./components/sidebar/sidebar"
+import HomePage from "./pages/home"
 
 const App = () => (
-  <>
-    <Box>Daksh</Box>
-    <Button variant='contained'>Click Me!</Button>
-  </>
+  <Stack direction='row'>
+    <SideBar />
+    <HomePage />
+  </Stack>
 )
 
 export default App
