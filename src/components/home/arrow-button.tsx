@@ -10,7 +10,9 @@ const ArrowButton = (props: ArrowButtonProps) => {
   const { handleClickBackward, handleClickForward } = props
 
   return (
-    <ButtonGroup sx={{ position: "absolute", bottom: "-90px", right: 0 }}>
+    <ButtonGroup
+      sx={{ position: "absolute", bottom: { xs: 0, md: "-80px" }, right: 0 }}
+    >
       <Button
         variant='text'
         startIcon={<MdKeyboardArrowLeft />}

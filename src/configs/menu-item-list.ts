@@ -16,7 +16,7 @@ export const MenuItemsList = [
   },
   {
     id: 2,
-    href: "#",
+    href: "/notification",
     title: "Notification",
     icon: GoBell,
   },

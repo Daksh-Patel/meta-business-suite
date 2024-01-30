@@ -28,7 +28,7 @@ const Selecter = () => {
         <Typography
           variant='body1'
           textTransform='capitalize'
-          fontSize='20px'
+          fontSize={{ xs: "16px", md: "20px" }}
           ml={1.5}
         >
           Sathi gaming

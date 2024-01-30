@@ -13,12 +13,18 @@ const Home = () => {
   const [value, setValue] = useState<number>(1)
 
   return (
-    <Stack width='100%' direction='row' mt='90px' spacing={2}>
+    <Stack
+      width='100%'
+      direction={{ xs: "column", md: "row" }}
+      mt='90px'
+      spacing={2}
+    >
       <Box
-        width='75%'
+        width={{ xs: "100%", lg: "75%" }}
+        maxWidth={{ xs: "330px", sm: "720px", md: "500px", lg: "unset" }}
         sx={{
           background: "#FFFFFF",
-          px: 3.5,
+          px: { xs: 2, md: 3.5 },
           pb: 1.5,
           borderRadius: "5px",
         }}
@@ -33,7 +39,8 @@ const Home = () => {
       </Box>
 
       <Box
-        width='25%'
+        width={{ xs: "100%", md: "25%" }}
+        maxWidth={{ xs: "340px", sm: "740px", md: "680px", lg: "unset" }}
         sx={{
           background: "#FFFFFF",
           p: 1,

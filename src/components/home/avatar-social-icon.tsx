@@ -25,7 +25,7 @@ const AvatarSocialIcon = () => {
       >
         <Avatar
           alt='Travis Howard'
-          sx={{ width: 100, height: 100 }}
+          sx={{ width: { xs: 70, md: 100 }, height: { xs: 70, md: 100 } }}
           src='images/sathigaming.png'
         />
       </Badge>
@@ -37,7 +37,7 @@ const AvatarSocialIcon = () => {
       >
         <Avatar
           alt='Travis Howard'
-          sx={{ width: 100, height: 100 }}
+          sx={{ width: { xs: 70, md: 100 }, height: { xs: 70, md: 100 } }}
           src='images/sathigaming.png'
         />
       </Badge>

@@ -24,7 +24,7 @@ const MenuItemList = (props: MenuItemListProps) => {
           href={menu.href}
           color='#333333'
           px='15px'
-          py='10px'
+          py='8px'
           sx={{
             textDecoration: "none",
             display: "flex",
@@ -40,13 +40,13 @@ const MenuItemList = (props: MenuItemListProps) => {
         >
           <Stack direction='row' alignItems='center'>
             <Icon component={menu.icon} size='29px' />
-            <Typography fontSize='20px' ml={2}>
+            <Typography fontSize='16px' ml={2}>
               {menu.title}
             </Typography>
           </Stack>
 
           {menu.icon2 !== undefined && (
-            <Icon component={menu.icon2} size='29px' />
+            <Icon component={menu.icon2} size='22px' />
           )}
         </Link>
       ))}

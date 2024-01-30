@@ -5,13 +5,14 @@ import { CiCirclePlus } from "react-icons/ci"
 import MoreButton from "./more-button"
 
 const CreateButtonGroup = () => (
-  <ButtonGroup>
+  <ButtonGroup fullWidth sx={{ flexDirection: { xs: "column", md: "row" } }}>
     <Button
       variant='contained'
       sx={{
-        width: "350px",
+        width: { xs: "100%", md: "350px" },
         height: "35px",
-        mr: "10px",
+        mr: { xs: 0, md: "10px" },
+        mb: { xs: "10px", md: 0 },
         textTransform: "unset",
         boxShadow: "unset",
       }}
@@ -23,9 +24,10 @@ const CreateButtonGroup = () => (
     <Button
       variant='contained'
       sx={{
-        width: "200px",
+        width: { xs: "100%", md: "200px" },
         height: "35px",
-        mr: "10px",
+        mr: { xs: 0, md: "10px" },
+        mb: { xs: "10px", md: 0 },
         background: "#F7F7F7",
         color: "black",
         textTransform: "unset",

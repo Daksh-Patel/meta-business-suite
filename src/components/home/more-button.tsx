@@ -62,9 +62,8 @@ const MoreButton = () => {
         onClick={handleClick}
         endIcon={<FaAngleDown />}
         sx={{
-          width: "101px",
+          width: { xs: "100%", md: "101px" },
           height: "35px",
-          mr: "10px",
           background: "#F7F7F7",
           color: "black",
           textTransform: "unset",

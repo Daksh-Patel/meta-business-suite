@@ -1,7 +1,11 @@
 import { Button, Divider, Stack } from "@mui/material"
 
 const Profile = () => (
-  <Stack direction='row' my={1}>
+  <Stack
+    direction={{ xs: "column", sm: "row" }}
+    my={1}
+    alignItems={{ xs: "flex-start", sm: "center" }}
+  >
     <Button
       variant='text'
       sx={{
