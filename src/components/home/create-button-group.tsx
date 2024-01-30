@@ -8,7 +8,13 @@ const CreateButtonGroup = () => (
   <ButtonGroup>
     <Button
       variant='contained'
-      sx={{ width: "379px", height: "35px", mr: "10px" }}
+      sx={{
+        width: "350px",
+        height: "35px",
+        mr: "10px",
+        textTransform: "unset",
+        boxShadow: "unset",
+      }}
       startIcon={<BsFillFilePostFill />}
     >
       Create post
@@ -22,6 +28,8 @@ const CreateButtonGroup = () => (
         mr: "10px",
         background: "#F7F7F7",
         color: "black",
+        textTransform: "unset",
+        boxShadow: "unset",
       }}
       startIcon={<CiCirclePlus />}
     >
